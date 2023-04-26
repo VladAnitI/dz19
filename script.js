@@ -31,13 +31,16 @@ const newCSS = () => {
 }
 
 const fileDelete = () => {
-    fs.unlink('style.css', (err) => {
+    fs.rmdir(path, (err) => {
+        if (err) throw err;
+    })
+    fs.unlink('css', (err) => {
         if (err) throw err;
     })
     fs.unlink('index.html', (err) => {
         if (err) throw err;
     })
-    console.log('File deleted successfully!');
+    console.log('Files deleted!');
 }
 
 // newHTML()
