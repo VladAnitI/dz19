@@ -41,5 +41,5 @@ const fileDelete = () => {
 }
 
 // newHTML()
-newCSS()
+// newCSS()
 // fileDelete()
